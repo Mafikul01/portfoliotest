@@ -5,6 +5,9 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import devImg from '../img/dev.jpg';
+import mafiImg from '../img/mafi.jpg';
+import dev3Img from '../img/dev3.jpeg';
 import { 
   Shield, 
   Code, 
@@ -152,7 +155,7 @@ const Hero = ({ darkMode }: { darkMode: boolean }) => {
         >
           <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-emerald-500 p-1 overflow-hidden mx-auto glow-emerald">
             <img 
-              src="img/dev.jpg" 
+              src={devImg} 
               alt="Mafikul Islam" 
               className="w-full h-full object-cover rounded-full"
               referrerPolicy="no-referrer"
@@ -236,7 +239,7 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
           >
             <div className={`aspect-[3/4] rounded-3xl overflow-hidden border transition-colors duration-300 ${darkMode ? 'border-white/10' : 'border-black/10'}`}>
               <img 
-                src="img/mafi.jpg" 
+                src={mafiImg} 
                 alt="Mafikul Islam" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -552,7 +555,7 @@ const Gallery = ({ darkMode }: { darkMode: boolean }) => {
             className={`rounded-3xl overflow-hidden border transition-colors duration-300 aspect-video md:aspect-auto md:h-[600px] ${darkMode ? 'border-white/10' : 'border-black/10'}`}
           >
             <img 
-              src="img/dev3.jpeg" 
+              src={dev3Img} 
               alt="Mafikul Islam" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
