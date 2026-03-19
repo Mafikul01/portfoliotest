@@ -5,9 +5,9 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import devImg from '../img/dev.jpg';
-import mafiImg from '../img/mafi.jpg';
-import dev3Img from '../img/dev3.jpeg';
+import devImg from './img/dev.jpg';
+import mafiImg from './img/mafi.jpg';
+import dev3Img from './img/dev3.jpeg';
 import { 
   Shield, 
   Code, 
