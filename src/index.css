@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Anton&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Anton", sans-serif;
+}
+
+body {
+  @apply bg-zinc-50 text-zinc-900 dark:bg-[#050505] dark:text-white;
+  font-family: var(--font-sans);
+  transition-property: background-color, color;
+  transition-duration: 300ms;
+}
+
+.glow-emerald {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+.hero-scroll-icon {
+  margin-left: -31px;
+}
+
+.hero-scroll-icon path {
+  margin-left: -9px;
+  margin-right: -5px;
+}
